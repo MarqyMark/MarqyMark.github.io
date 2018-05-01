@@ -26,7 +26,6 @@ main section, aside {
 
 section #title {
     font-size: 200%;
-    font-style: bold;
     margin-bottom: -10px;       /*Reduce gap between "About Us" and paragraphs*/
 }
 
