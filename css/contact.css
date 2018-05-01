@@ -1,0 +1,119 @@
+/*styles for home page*/
+
+html, body, header {          /*Used to allow percentage-based image scaling according to browser size. 100% causes the scroll bars to appear unnecessarily*/
+    width: 99%;
+    height: 99%;
+    text-align: left;
+    font-family: Constantia;
+    /* background-color: black; */
+    /* overflow: hidden;   Disables scrollbars in main viewport */
+}
+
+main section, aside {
+    position: absolute;
+    left: 200px;
+    top: 180px;
+    z-index: 2;
+    color: white;
+    margin-left: 50px;
+    margin-right: 200px;
+    min-width: 1001px;
+    max-width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 7px black;
+}
+
+section #greet {
+    font-size: 250%;
+    font-style: bold;
+}
+
+section p {
+    position: absolute;
+    Left: 600px;
+    font-size: 120%;
+    text-align: left;
+    min-width: 200px;
+}
+
+#contact1 {
+    position: relative;
+
+}
+
+#contact2 {
+    position: relative;
+    top:45px;
+}
+
+#contact3 {
+    position: relative;
+    top:25px;
+}
+
+#contact4 {
+    position: relative;
+    top:5px;
+}
+
+#vetsGif {
+    position: relative;
+    left: 250px;
+}
+
+
+/*form style*/
+
+#registrationBox {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(200, 200, 200, .3);
+}
+
+#subscribeText {
+    position: absolute;
+    left: 120px;
+    top: 110px;
+    max-width: 350px;
+    font-size: 140%;
+}
+
+fieldset {
+    position: absolute;
+    left: 105px;
+    top: 220px;
+    width: 350px;
+    border: 0;
+}
+
+
+input {
+    width: 350px;
+    padding: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=feedback] {
+    padding: 60px 0;
+}
+
+
+input[type=submit] {
+    position: absolute;
+    left: 12px;
+    top: 240px;
+    background-color: #009cff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+

@@ -1,0 +1,168 @@
+/*Frame work styles. To be referenced by every page, for footer and top/side bar styling.*/
+
+html, body, header {          /*Used to allow percentage-based image scaling according to browser size. 100% causes the scroll bars to appear unnecessarily*/
+    width: 99%;
+    height: 99%;
+    text-align: left;
+    font-family: Constantia;
+    /* background-color: black; */
+    overflow: hidden;   /*Disables scrollbars in main viewport */
+}
+
+#TESTINGBOX {  /*Simulated window size of 1366x768 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1366px;
+    height: 768px;
+    /* background: red; */
+    border: 3px solid red;
+    float: top;
+    z-index: 7;        /*Pull it in front of everything*/
+}
+
+/* Image, quote, and top/side bar placement */
+
+#Logo {
+    position: absolute;
+    left: 10px;
+    top:4px;
+    float: left;
+    z-index: 4;
+    width: 360px;
+}
+
+#topBar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #ffc73b;
+    float: none;
+    z-index: 3;
+}
+#topBarDupe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1366px;
+    height: 100px;
+    background: #ffc73b;
+    float: none;
+    z-index: 3;
+}
+
+#sideBar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    height: 100%;
+    background: #b55200;
+    z-index: 2;
+
+}
+
+#catchphrase {
+    color: #b55200;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 900px;
+    width: 100%;
+    /* left: 50%; */
+    top: 15px;
+    /* display: block; */
+    z-index: 3;
+    text-align: center;
+    font-style: italic;
+    left: 50px;
+}
+
+/* Navigation Menu appearance / functionality. Contents here will NOT scale with browser size. */
+
+#navMenu {
+    position: absolute;
+    left: 360px;
+    top: 30px;
+    z-index: 1;
+    transition: 1s;
+}
+
+#navMenu ul {
+    list-style-type: none;
+    margin-left: auto;              /*Neat wrapper trick*/
+    margin-right: auto;             /**/
+    min-width: 900px;               /*Prevents navMenu buttons from collapsing when browsesr window is too small*/
+    padding: 0;
+    overflow: hidden;
+}
+
+#navMenu ul li {        /*Render navigation horizontal*/
+    float: left;
+}
+
+#navMenu ul li a {
+    position: relative;
+	display: block;
+	width: 160px;
+    text-align: center;
+    font-size: 220%;
+    padding: 1.5em 0 .25em;
+    margin: 5px 5px 40px;       /*3rd attribute grants enough space for slide-down motion*/
+	text-decoration: none;
+	background-color: #e2d8cf;
+	color: #b55200;
+    font-weight: bold;
+
+    top: 0px;
+
+    transition: .5s;
+    -webkit-transition: .5s;
+
+}
+
+#navMenu ul li a:hover {
+    color: #281200;
+    top: 30px;
+}
+
+#navMenu a.current {    /*Needed a.current - current alone was glitchy*/
+    background-color: #ffc73b;
+}
+
+
+/*Background image style*/
+
+#backgroundImage {
+    position: absolute;
+    background-size: cover;
+    width: 1920px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1450px)  {
+    /* #backgroundImage {
+        width: 1366px;
+        height: auto;
+    } */
+    #catchphrase {
+        margin-left: 100px;
+        margin-right: 0px;
+        left: 225px;
+        width: 0;
+    }
+}
+
+
+
+/* * {
+    border: 2px solid red;
+} */
+
+
+
