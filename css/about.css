@@ -10,6 +10,7 @@ html, body, header {          /*Used to allow percentage-based image scaling acc
 }
 
 main section, aside {
+    display: block;
     position: absolute;
     left: 670px;
     top: 170px;
@@ -23,27 +24,39 @@ main section, aside {
     text-shadow: 2px 2px 7px black;
 }
 
-@media only screen and (max-width: 1366px) {
-    #introText {
-        margin-left: 0;
-        margin-right: 0;
-        left: 250px;
-        top: 180px;
-    }
-}
-
 section #title {
     font-size: 200%;
     font-style: bold;
+    margin-bottom: -10px;       /*Reduce gap between "About Us" and paragraphs*/
 }
 
-section p {
-    font-size: 120%;
+#aboutText p {                /*wrapper for all text on about page*/
+    display: block;
+    margin-left: 0px;
+    margin-right: 200px;
+    /* min-width: 500px;*/       /*Temp adjustments for now. Will use media for size snapping*/
+    /* max-width: 600px; */
+    width: 500px;
+    font-size: 105%;        /*May be included in size snapping. TBD*/
+}
+
+@media only screen and (min-width: 1450px) {    /*If browser window is > 1450px*/
+    #aboutText p {
+        width: 600px;   /*Increase text field*/
+        font-size: 110%;    /*Increase text size*/
+    }
+    main section, aside {  
+        margin-left: 50px;  /*Convert all page content from absolute placement to relative according to browser window size (percentual)*/
+        margin-right: 200px;
+        left: 46.3%;    /*Distance form left of window equal to 720px from left edge of window. (left+margin-left in root element handler)*/
+    }
 }
 
 /* 2 images style */
 
 #images {
+    display: block;
+    width: 300px;
     position: relative;
     right: 360px;
     top: 35px;
