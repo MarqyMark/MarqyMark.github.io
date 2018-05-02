@@ -159,6 +159,44 @@ html, body, header {          /*Used to allow percentage-based image scaling acc
 }
 
 
+/* Side bar style */
+
+
+#mediaSideBar {
+    position: absolute;
+    top: 150px;
+    left: -223px;       /*Flush with side bar -223px*/
+    z-index: 1;
+    
+}
+
+#facebookPic {
+    position: absolute;
+    z-index: 1;
+    clip: rect(126px, 399px, 182px, 343px);
+    width: 600px;  /*Orig dimensions: 800x600px*/
+    height: auto;
+}
+#twitterPic {
+    position: absolute;
+    z-index: 1;
+    clip: rect(196px, 329px, 253px, 273px);
+    left: 70px;
+    top: -14px;
+    width: 600px;  /*Orig dimensions: 800x600px*/
+    height: auto;
+}
+#googlePic {
+    position: absolute;
+    z-index: 1;
+    clip: rect(55px, 329px, 112px, 273px);
+    left: 70px;
+    top: 184px;
+    width: 600px;  /*Orig dimensions: 800x600px*/
+    height: auto;
+}
+
+
 
 /* * {
     border: 2px solid red;
