@@ -1,12 +1,8 @@
-/*styles for home page*/
-
-html, body, header {          /*Used to allow percentage-based image scaling according to browser size. 100% causes the scroll bars to appear unnecessarily*/
+html, body, header {
     width: 99%;
     height: 99%;
     text-align: left;
-    font-family: Constantia;
-    /* background-color: black; */
-    /* overflow: hidden;   Disables scrollbars in main viewport */
+    font-family: "Palatino Linotype";
 }
 
 main section, aside {
@@ -25,13 +21,15 @@ main section, aside {
 }
 
 section #title {
-    font-size: 200%;
-    margin-bottom: -15px;       /*Reduce gap between "About Us" and paragraphs*/
-    padding: 5px 0 0 10px;
+    font-size: 180%;
+    margin-bottom: -15px; 
+    padding: 0px 0 0 6px;
 }
 
 #aboutText {
-    width: 525px;
+    position: relative;
+    top: 10px;
+    width: 575px;
     background-color: rgba(50, 50, 50, .6);
 }
 
@@ -41,7 +39,7 @@ section #title {
     margin-right: 200px;
     /* min-width: 500px;*/       /*Temp adjustments for now. Will use media for size snapping*/
     /* max-width: 600px; */
-    width: 500px;
+    width: 550px;
     font-size: 105%;        /*May be included in size snapping. TBD*/
     padding-left: 10px;
     padding-bottom: 10px;

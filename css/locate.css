@@ -1,15 +1,11 @@
-/*styles for home page*/
-
-html, body, header {          /*Used to allow percentage-based image scaling according to browser size. 100% causes the scroll bars to appear unnecessarily*/
+html, body, header {
     width: 99%;
     height: 99%;
     text-align: left;
-    font-family: Constantia;
-    /* background-color: black; */
-    /* overflow: hidden;   Disables scrollbars in main viewport */
+    font-family: "Palatino Linotype";
 }
 
-main section, {
+main section {
     position: absolute;
     left: 200px;
     top: 180px;
@@ -17,21 +13,32 @@ main section, {
 }
 
 
-main aside {
+@media only screen and (min-width: 1575px) {
+    main section, aside {
+        margin-left: -588px;
+        margin-right: 0px;
+        min-width: 1001px;
+        max-width: 100%;
+        left: 50%;
+    }
+}
+
+
+main #storePic {
     position: absolute;
-    left: 750px;
-    top: 260px;
+    left: 520px;
+    top: 80px;
     z-index: 2;
 }
 
 #map {
     position: absolute;
-    top: 260px;
-    left: 325px;
+    top: 80px;
+    left: 100px;
     width: 400px;
     height: 400px;
     background: black;
-    z-index: 4;
+    z-index: 2;
 }
 
 #storePic {

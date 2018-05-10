@@ -1,12 +1,8 @@
-/*styles for home page*/
-
-html, body, header {          /*Used to allow percentage-based image scaling according to browser size. 100% causes the scroll bars to appear unnecessarily*/
+html, body, header {
     width: 99%;
     height: 99%;
     text-align: left;
-    font-family: Constantia;
-    /* background-color: black; */
-    /* overflow: hidden;   Disables scrollbars in main viewport */
+    font-family: "Palatino Linotype";
 }
 
 main section, aside {
@@ -23,17 +19,41 @@ main section, aside {
     text-shadow: 1px 1px 7px black;
 }
 
+aside {
+    top: 200px;
+}
+
+@media only screen and (min-width: 1500px) {
+    main section, aside {
+        margin-left: -500px;
+        margin-right: 0px;
+        min-width: 1001px;
+        max-width: 100%;
+        left: 50%;
+    }
+}
+
 section #greet {
     font-size: 250%;
     font-style: bold;
 }
 
-section p {
+#address_info {
     position: absolute;
-    Left: 600px;
+    left: 550px;
+    width: 350px;
+    height: 125px;
+    top: 140px;
+    background: rgba(200, 200, 200, .3);
+}
+
+section p {
+    margin-left: 5px;
+    margin-top: 1px;
     font-size: 120%;
     text-align: left;
     min-width: 200px;
+    width: 340px;
 }
 
 #contact1 {
@@ -58,7 +78,8 @@ section p {
 
 #vetsGif {
     position: relative;
-    left: 250px;
+    left: 230px;
+    top: 160px;
 }
 
 
