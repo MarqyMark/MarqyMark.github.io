@@ -16,21 +16,26 @@ main section, {
     z-index: 2;
 }
 
-#map {
-    width: 400px;
-    height: 400px;
-    background: black;
-    border: 2px solid green;
-}
 
 main aside {
     position: absolute;
-    left: 780px;
+    left: 750px;
     top: 260px;
     z-index: 2;
+}
+
+#map {
+    position: absolute;
+    top: 260px;
+    left: 325px;
+    width: 400px;
+    height: 400px;
+    background: black;
+    z-index: 4;
 }
 
 #storePic {
     width: 600px;
     height: auto;
 }
+

@@ -26,7 +26,13 @@ main section, aside {
 
 section #title {
     font-size: 200%;
-    margin-bottom: -10px;       /*Reduce gap between "About Us" and paragraphs*/
+    margin-bottom: -15px;       /*Reduce gap between "About Us" and paragraphs*/
+    padding: 5px 0 0 10px;
+}
+
+#aboutText {
+    width: 525px;
+    background-color: rgba(50, 50, 50, .6);
 }
 
 #aboutText p {                /*wrapper for all text on about page*/
@@ -37,6 +43,8 @@ section #title {
     /* max-width: 600px; */
     width: 500px;
     font-size: 105%;        /*May be included in size snapping. TBD*/
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 1450px) {    /*If browser window is > 1450px*/
@@ -48,6 +56,9 @@ section #title {
         margin-left: 50px;  /*Convert all page content from absolute placement to relative according to browser window size (percentual)*/
         margin-right: 200px;
         left: 46.3%;    /*Distance form left of window equal to 720px from left edge of window. (left+margin-left in root element handler)*/
+    }
+    #aboutText {
+        width: 620px;
     }
 }
 

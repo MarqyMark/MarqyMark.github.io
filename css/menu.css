@@ -19,16 +19,28 @@ main section, aside {
     margin-right: 200px;
     max-width: 100%;
     text-align: left;
-    text-shadow: 2px 2px 7px black;
+    text-shadow: 1px 1px 7px black;
+    
 }
 
+
 /*column styles*/
+
+#columns {
+    margin-left: 100px;
+    margin-top: 35px;
+    width: 970px;
+    height: 540px;
+    display: block;
+    background-color: rgba(70, 70, 70, .5);
+}
 
 #column1a {
     position: absolute;
     left: 150px;
     top: 60px;
-    min-width: 148px;
+    width: 149px;
+    
 }
 section #group1 {
     position: absolute;
@@ -37,6 +49,7 @@ section #group1 {
     font-size: 150%;
     font-style: bold;
     min-width: 500px;
+    
 }
 .price1 {
     position: absolute;
@@ -71,7 +84,7 @@ section #group2 {
     position: absolute;
     left: 620px;
     top: 60px;
-    min-width: 148px;
+    width: 149px;
 }
 section #group3 {
     position: absolute;

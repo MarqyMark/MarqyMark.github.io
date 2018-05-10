@@ -43,17 +43,17 @@ section p {
 
 #contact2 {
     position: relative;
-    top:45px;
+    top:-15px;
 }
 
 #contact3 {
     position: relative;
-    top:25px;
+    top:-30px;
 }
 
 #contact4 {
     position: relative;
-    top:5px;
+    top:-45px;
 }
 
 #vetsGif {
@@ -98,9 +98,14 @@ input {
     box-sizing: border-box;
 }
 
-input[type=feedback] {
-    padding: 60px 0;
+input[type=email] {
+    position: relative;
+    top: 5px;
 }
+
+/* input[type=feedback] {
+    padding: 60px 0;
+} */
 
 
 input[type=submit] {
@@ -114,6 +119,18 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+}
+
+#feedback {
+    position: absolute;
+    left: 12px;
+    top: 100px;
+    width: 350px;
+    height: 130px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 
