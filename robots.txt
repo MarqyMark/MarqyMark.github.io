@@ -1,0 +1,10 @@
+
+
+# Allow crawling of all contentby Google, but no others
+
+
+User-agent: Google
+Disallow:
+
+User-agent: *
+Disallow: /
