@@ -45,7 +45,7 @@ main section, aside {
     position: absolute;
     left: 150px;
     top: 60px;
-    width: 149px;
+    width: 169px;
     
 }
 section #group1 {
@@ -53,7 +53,6 @@ section #group1 {
     left: -20px;
     top: -40px;
     font-size: 150%;
-    font-style: bold;
     min-width: 500px;
     
 }
@@ -62,7 +61,6 @@ section #group1 {
     Left: 370px;
     top: -40px;
     font-size: 150%;
-    font-style: bold;
 }
 
 #column1b {
@@ -76,14 +74,12 @@ section #group2 {
     Left: 0px;
     top: 0px;
     font-size: 150%;
-    font-style: bold;
 }
 .price2 {
     position: absolute;
     Left: 340px;
     top: 0px;
     font-size: 150%;
-    font-style: bold;
 }
 
 #column2a {
@@ -97,7 +93,6 @@ section #group3 {
     left: -20px;
     top: -40px;
     font-size: 150%;
-    font-style: bold;
     min-width: 500px;
 }
 .price3 {
@@ -105,7 +100,6 @@ section #group3 {
     Left: 360px;
     top: -40px;
     font-size: 150%;
-    font-style: bold;
 }
 
 #column2b {
@@ -119,14 +113,12 @@ section #group4 {
     Left: 0px;
     top: 0px;
     font-size: 150%;
-    font-style: bold;
 }
 .price4 {
     position: absolute;
     Left: 340px;
     top: 0px;
     font-size: 150%;
-    font-style: bold;
 }
 
 #column2c {
@@ -140,7 +132,6 @@ section #group5 {
     left: -20px;
     top: -40px;
     font-size: 150%;
-    font-style: bold;
     min-width: 500px;
 }
 
